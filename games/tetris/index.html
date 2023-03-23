@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tetris</title>
+  </head>
+
+  <a href="../../index.html">
+      <img src="arrow.png" alt="" style="background: #dfdfdf; width: 40px; position: absolute; top:30px; left:30px; border-radius: 50%;">
+  </a>
+
+  <body>
+
+    <script src="src/index.js"></script>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+      body {
+        background-color: #202123;
+      }
+      #map {
+        display: block;
+        margin: 10px auto 0 auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      }
+      #score {
+        margin: 20px auto;
+        text-align: center;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 35px;
+        color: #dfdfdf;
+      }
+    </style>
+    <div style="position: absolute;
+  left: 50%;
+  top: 47%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);">
+      <div id="score">0</div>
+      <canvas id="map" width="350" height="700"></canvas>
+    </div>
+  </body>
+</html>

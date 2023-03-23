@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>April Arcade</title>
+    <style>
+      * { 
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+       }
+      .button {
+        display: inline-block;
+        width: 33.33333333vw;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        opacity: 0.25;
+      }
+
+      .button:hover{
+        opacity: 1;
+        font-size: 48px;
+      }
+
+      .button a {
+        font-family: 'roboto mono', sans-serif;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        opacity: 0;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="button" style="background-image: url('tumbnails/2048.jpeg')">
+        <a href="games/2048/index.html">2048</a>
+      </div>
+      <div class="button" style="background-image: url('tumbnails/mario.jpeg')">
+        <a href="games/supermario/index.html">SUPERMARIO 1985</a>
+      </div>
+      <div class="button" style="background-image: url('tumbnails/maze.jpeg')">
+        <a href="games/maze-game/index.html">MAZE</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="button" style="background-image: url('tumbnails/snake.png')">
+        <a href="games/snake/index.html">SNAKE</a>
+      </div>
+      <div class="button" style="background-image: url('tumbnails/tetris.jpeg')">
+        <a href="games/tetris/index.html">TETRIS</a>
+      </div>
+      <div class="button" style="background-image: url('tumbnails/pacman.jpeg')">
+        <a href="games/pacman/index.html">PACMAN</a>
+      </div>
+    </div>
+  </body>
+</html>
